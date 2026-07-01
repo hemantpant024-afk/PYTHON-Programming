@@ -1,4 +1,6 @@
 class Calculator:
+    #def is a keyword in python used to define(create) a function.
+    # init is a constructor.When objrct create is automatically called
     def __init__(self, value=0):
         self.value = value
 
