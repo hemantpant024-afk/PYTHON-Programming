@@ -46,3 +46,77 @@ Python
 - Makes code reusable
 - Represents real-world objects
 - Supports Object-Oriented Programming (OOP)
+
+
+---
+
+# Python Functions
+
+## What is a Function?
+
+A function is a block of code that performs a specific task. It helps reduce code repetition and makes programs easier to read and maintain.
+
+---
+
+## Syntax
+
+```python
+def function_name():
+    # Code
+    pass
+```
+
+---
+
+## Example
+
+```python
+def greet():
+    print("Welcome to Python!")
+
+greet()
+```
+
+---
+
+## Output
+
+```
+Welcome to Python!
+```
+
+---
+
+## Function with Parameters
+
+```python
+def add(a, b):
+    print("Sum =", a + b)
+
+add(10, 20)
+```
+
+---
+
+## Output
+
+```
+Sum = 30
+```
+
+---
+
+## Advantages of Functions
+
+- Reusable code
+- Reduces code duplication
+- Improves readability
+- Easy to debug
+- Easy to maintain
+
+---
+
+## Types of Functions
+
+1. Built-in Functions (`print()`, `input()`, `len()`)
+2. User-defined Functions
