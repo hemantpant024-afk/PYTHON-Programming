@@ -25,3 +25,7 @@ student1.course = "CSE"
 
 # Display details
 student1.display()
+
+
+def hello_student():
+    pass
