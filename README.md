@@ -147,3 +147,8 @@ List is the colluction of data.Witch is ordered and channgeable.
 |     9 | `remove()`  | Removes the item with the specified value.                       |
 |    10 | `reverse()` | Reverses the order of the list.                                  |
 |    11 | `sort()`    | Sorts the list.                                                  |
+
+
+---
+
+

@@ -1,27 +1,17 @@
-class Customer: #class customer
-    def get_customer(self): #puruose: takes the coustomers name and account number. 
-        self.name = input("Enter Customer Name: ") #def for function methord.  
-        self.acc_no = input("Enter Account Number: ")
-
-
+# Bank 
 class Bank:
-    def get_balance(self):
-        self.balance = int(input("Enter Balance: "))
+    """Bank details of a student"""
 
-    def display(self, customer):
-        print("\n----- Bank Details -----")
-        print("Customer Name:", customer.name)
-        print("Account Number:", customer.acc_no)
-        print("Balance:", self.balance)
+    bank_name = str
+    account_number = str
+    bank_branch = str
 
+    def __init__(self, bank_name: str, account_number: str, bank_branch: str):
+        self.self.bank_name: str = bank_name # type: ignore
+        self.self.account_number: str = account_number # type: ignore
+        self.self.bank_branch: str = bank_branch # type: ignore
 
-# Create Objects
-c1 = Customer()
-b1 = Bank()
-
-# Call Functions
-c1.get_customer()
-b1.get_balance()
-
-# Display Details
-b1.display(c1)
+    def display(self):
+        print("bank_name:", self.bank_name)
+        print("account_number:", self.account_number)
+        print("bank_branch:", self.bank_branch)

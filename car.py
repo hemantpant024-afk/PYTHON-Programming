@@ -1,33 +1,27 @@
 # CAR CLASS
 
 class Car:
+    """Car details of a student"""
+    
     brand: str
     model: str
+    car_num: str
     color: str
     year: int
-    price: float
-    is_available: bool
+    price: str
+
+    def __init__(self, brand: str, model: str, car_number: str, color: str, year: int, price: int):
+        self.brand = brand
+        self.model = model
+        self.car_number = car_number
+        self.color = color
+        self.year = year
+        self.price = price
 
     def display(self):
-        print("Car Details")
-        print("Brand        :", self.brand)
-        print("Model        :", self.model)
-        print("Color        :", self.color)
-        print("Year         :", self.year)
-        print("Price        :", self.price)
-        print("Available    :", self.is_available)
-
-
-# Create an object
-c1 = Car()
-
-# Assign values
-c1.brand = "BMW"
-c1.model = "BMW M3 E90 COMPETITION"
-c1.color = "Black"
-c1.year = 2014
-c1.price = 13000000       #in ₹
-c1.is_available = True
-
-# Display details
-c1.display()
+        print("Brand:", self.brand)
+        print("Model:", self.model)
+        print("Car Number:", self.car_number)
+        print("Color:", self.color)
+        print("Year:", self.year)
+        print("Price:", self.price)
