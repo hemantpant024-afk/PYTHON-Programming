@@ -26,7 +26,7 @@ c1.brand = "BMW"
 c1.model = "BMW M3 E90 COMPETITION"
 c1.color = "Black"
 c1.year = 2014
-c1.price = 1,30,000,00
+c1.price = 13000000       #in ₹
 c1.is_available = True
 
 # Display details
