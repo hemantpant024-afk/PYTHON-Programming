@@ -120,3 +120,30 @@ Sum = 30
 
 1. Built-in Functions (`print()`, `input()`, `len()`)
 2. User-defined Functions
+
+
+---
+
+# _LIST_
+List is the colluction of data.Witch is ordered and channgeable.   
+
+```python
+ list = [2,3,4,hemant,true,10]
+ print(list[0]) # index
+ print(list[-2])# negative index
+ ```
+ # Python List Methods
+
+| S.No. | Method      | Description                                                      |
+| ----: | ----------- | ---------------------------------------------------------------- |
+|     1 | `append()`  | Adds an element at the end of the list.                          |
+|     2 | `clear()`   | Removes all the elements from the list.                          |
+|     3 | `copy()`    | Returns a copy of the list.                                      |
+|     4 | `count()`   | Returns the number of elements with the specified value.         |
+|     5 | `extend()`  | Adds the elements of a list to the end of the current list.      |
+|     6 | `index()`   | Returns the index of the first element with the specified value. |
+|     7 | `insert()`  | Adds an element at the specified position.                       |
+|     8 | `pop()`     | Removes the element at the specified position.                   |
+|     9 | `remove()`  | Removes the item with the specified value.                       |
+|    10 | `reverse()` | Reverses the order of the list.                                  |
+|    11 | `sort()`    | Sorts the list.                                                  |
