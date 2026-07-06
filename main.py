@@ -3,6 +3,7 @@ from student import Student
 from bank import Bank
 from car import Car
 from student_service import StudentService
+from db import DBConnection
 
 class Main:
 
@@ -10,6 +11,7 @@ class Main:
         self.data_load: DataLoad = DataLoad()
         self.data_load.load()
         self.student_service = StudentService()
+        self.db_connection = DBConnection()
 
     def print_student_details(self, roll_num: int) -> None:
         """Print Student details, like Student info, Bank details, Car details"""
@@ -25,12 +27,18 @@ class Main:
         print(f"Car Details:: {car}")
         print(f"Bank Details:: {bank}")
 
+
     
     def run(self):
         print("Staring Main...")
         roll_num: int = 3
+        student = self.db_connection.get_student_data(roll_num=roll_num)
 
-        self.print_student_details(roll_num=roll_num)
+        print(f"Students:: {student}")
+
+        # self.print_student_details(roll_num=roll_num)
+
+
 
 
 
