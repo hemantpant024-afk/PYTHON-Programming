@@ -2,10 +2,10 @@
 
 class Car:
     """Car details of a student"""
-    
+
     brand: str
     model: str
-    car_num: str
+    car_number: str
     color: str
     year: int
     price: str
@@ -18,10 +18,9 @@ class Car:
         self.year = year
         self.price = price
 
-    def display(self):
-        print("Brand:", self.brand)
-        print("Model:", self.model)
-        print("Car Number:", self.car_number)
-        print("Color:", self.color)
-        print("Year:", self.year)
-        print("Price:", self.price)
+    def __str__(self) -> str:
+        return f"{self.color} {self.brand} {self.model} ({self.year}) - No: {self.car_number}"
+
+    def __repr__(self) -> str:
+        return (f"Car(brand={self.brand!r}, model={self.model!r}, car_num={self.car_number!r}, "
+                f"color={self.color!r}, year={self.year}, price={self.price!r})")

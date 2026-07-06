@@ -5,14 +5,15 @@ from car import Car
 class DataLoad:
     """Load all the student related data like students, cars & bank details"""
 
-    students: list[Student]
-    bank_accounts:list[Bank]
-    cars:list[Car]
-    student_bank_mapping: dict[int,str]
-    student_car_mapping: dict[int,str]
+    def __init__(self):
+        self.students: list[Student] = []
+        self.bank_accounts:list[Bank] = []
+        self.cars:list[Car] = []
+        self.student_bank_mapping: dict[int,str] = {}
+        self.student_car_mapping: dict[int,str] = {}
 
 
-    def load_student_data(self) -> None:
+    def load_student_data(self) -> list[Student]:
         """Load student data"""
 
         s1 = Student("Hemant Pant", 19, "CSE", "O+", 1, "9876543264")
@@ -26,6 +27,8 @@ class DataLoad:
         self.students.append(s3)
         self.students.append(s4)
         self.students.append(s5)
+
+        return self.students
 
     def load_bank_data(self) -> None:
         """Load student data"""
@@ -60,21 +63,21 @@ class DataLoad:
     def load_student_bank_mapping(self) -> None:
         """Join Student and Bank data"""
 
-        self.student_bank_mapping.update(1, "783767853457")
-        self.student_bank_mapping.update(2, "647384384877")
-        self.student_bank_mapping.update(3, "783767853457")
-        self.student_bank_mapping.update(4, "767877375378")
-        self.student_bank_mapping.update(5, "898272536755")
+        self.student_bank_mapping[1] =  "783767853457"
+        self.student_bank_mapping[2] =  "647384384877"
+        self.student_bank_mapping[3] =  "783767853457"
+        self.student_bank_mapping[4] =  "767877375378"
+        self.student_bank_mapping[5] =  "898272536755"
 
 
     def load_student_car_mapping(self) -> None:
         """Join Student and Car data"""
 
-        self.student_car_mapping.update(1,"UK11AB1234")
-        self.student_car_mapping.update(2,"DL01CD5678")
-        self.student_car_mapping.update(3,"UP03BL6634")
-        self.student_car_mapping.update(4,"HR26CD9456")
-        self.student_car_mapping.update(5,"UK07JK7890")
+        self.student_car_mapping[1] =  "UK11AB1234"
+        self.student_car_mapping[2] =  "DL01CD5678"
+        self.student_car_mapping[3] =  "UP03BL6634"
+        self.student_car_mapping[4] =  "HR26CD9456"
+        self.student_car_mapping[5] =  "UK07JK7890"
 
     
     def load(self) -> None:
@@ -84,4 +87,3 @@ class DataLoad:
         self.load_car_data()
         self.load_student_bank_mapping()
         self.load_student_car_mapping()
-
