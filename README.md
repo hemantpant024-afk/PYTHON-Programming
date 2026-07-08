@@ -151,3 +151,45 @@ List is the colluction of data.Witch is ordered and channgeable.
 
 ---
 
+# TUPLE
+
+Tuple is an immmutable list.Once a Tuple is created, no changes can be made to it. Tuple is also defind like list. in instead of square breacket [], parenthesis () is used only for the element.
+
+
+Tuple and it's Method
+
+* It is not possible to add element in Tuple. No append or extend method work in Tuple. 
+* Similarly, it is also not possible to remove an element in a Tuple. Tuple dose not have any remove or pop method. 
+* Support Boolean Expression like 'IN' like 'LIST' Tuple. 
+
+---
+
+# SET
+
+SET is unauthored collection of item, in witch each element is unique, there is no duplicate element and is immutable, that is, it cannot be changed. 
+
+
+---
+
+# Introduction
+
+A **Dictionary** is a built-in data type in Python that stores data as **key-value pairs**. Each key in a dictionary is **unique** and is used to access its corresponding value. Dictionaries are **mutable**, meaning their contents can be added, updated, or removed after creation. They are widely used to store structured data such as student records, employee details, product information, and configuration settings because they provide fast and efficient data retrieval.
+
+---
+# Dictionary Methods
+
+| Method         | Syntax                        | Description                                                                                | Example                               |
+| -------------- | ----------------------------- | ------------------------------------------------------------------------------------------ | ------------------------------------- |
+| `clear()`      | `dict.clear()`                | Removes all items from the dictionary.                                                     | `student.clear()`                     |
+| `copy()`       | `dict.copy()`                 | Returns a shallow copy of the dictionary.                                                  | `new_dict = student.copy()`           |
+| `fromkeys()`   | `dict.fromkeys(keys, value)`  | Creates a new dictionary with specified keys and a common value.                           | `dict.fromkeys(["a","b"], 0)`         |
+| `get()`        | `dict.get(key)`               | Returns the value of the given key.                                                        | `student.get("name")`                 |
+| `items()`      | `dict.items()`                | Returns all key-value pairs.                                                               | `student.items()`                     |
+| `keys()`       | `dict.keys()`                 | Returns all keys in the dictionary.                                                        | `student.keys()`                      |
+| `pop()`        | `dict.pop(key)`               | Removes and returns the value of the specified key.                                        | `student.pop("age")`                  |
+| `popitem()`    | `dict.popitem()`              | Removes and returns the last inserted key-value pair.                                      | `student.popitem()`                   |
+| `setdefault()` | `dict.setdefault(key, value)` | Returns the value of the key. If the key doesn't exist, inserts it with the default value. | `student.setdefault("city", "Delhi")` |
+| `update()`     | `dict.update(other_dict)`     | Updates the dictionary with key-value pairs from another dictionary.                       | `student.update({"age": 20})`         |
+| `values()`     | `dict.values()`               | Returns all values in the dictionary.                                                      | `student.values()`                    |
+
+---
